@@ -1,6 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Palette, Instagram, Facebook, Twitter, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Palette,
+  Instagram,
+  Facebook,
+  Twitter,
+  Youtube,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -13,28 +22,68 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <Palette size={28} />
-              <span className="text-xl font-serif font-bold">ArtistName</span>
+              <span className="text-xl font-serif font-bold">Mahendar</span>
             </Link>
             <p className="text-neutral-400 max-w-xs">
-              Creating beautiful art inspired by nature and human emotion, bringing color and life to every canvas.
+              Creating beautiful art inspired by nature and human emotion,
+              bringing color and life to every canvas.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-serif font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-serif font-semibold mb-4">
+              Quick Links
+            </h4>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-neutral-400 hover:text-white transition-colors">About</Link></li>
-              <li><Link to="/gallery" className="text-neutral-400 hover:text-white transition-colors">Gallery</Link></li>
-              <li><Link to="/courses" className="text-neutral-400 hover:text-white transition-colors">Courses</Link></li>
-              <li><Link to="/events" className="text-neutral-400 hover:text-white transition-colors">Events</Link></li>
-              <li><Link to="/contact" className="text-neutral-400 hover:text-white transition-colors">Contact</Link></li>
+              <li>
+                <Link
+                  to="/about"
+                  className="text-neutral-400 hover:text-white transition-colors"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/gallery"
+                  className="text-neutral-400 hover:text-white transition-colors"
+                >
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/courses"
+                  className="text-neutral-400 hover:text-white transition-colors"
+                >
+                  Courses
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/events"
+                  className="text-neutral-400 hover:text-white transition-colors"
+                >
+                  Events
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-neutral-400 hover:text-white transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-serif font-semibold mb-4">Contact Info</h4>
+            <h4 className="text-lg font-serif font-semibold mb-4">
+              Contact Info
+            </h4>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <Mail size={18} className="text-neutral-400 mt-1" />
@@ -42,11 +91,15 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <Phone size={18} className="text-neutral-400 mt-1" />
-                <span className="text-neutral-400">+1 (555) 123-4567</span>
+                <span className="text-neutral-400">+91 97165 29330</span>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-neutral-400 mt-1" />
-                <span className="text-neutral-400">123 Art Studio Lane, Creative City, AC 12345</span>
+                <span className="text-neutral-400">
+                  <b>M.M. International Institute Of Fine Art</b>
+                  75, W.K. Road, near N.A.S Degree College, Mohanpuri, Meerut,
+                  Uttar Pradesh 250003
+                </span>
               </li>
             </ul>
           </div>
@@ -55,16 +108,36 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-serif font-semibold mb-4">Follow Me</h4>
             <div className="flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors">
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-600 transition-colors"
+              >
                 <Youtube size={20} />
               </a>
             </div>
@@ -73,7 +146,7 @@ const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="pt-8 border-t border-neutral-800 text-center text-neutral-500 text-sm">
-          <p>&copy; {currentYear} ArtistName. All rights reserved.</p>
+          <p>&copy; {currentYear} Mahendar. All rights reserved.</p>
         </div>
       </div>
     </footer>
